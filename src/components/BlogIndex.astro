@@ -4,9 +4,9 @@ const blogCollection = await getCollection('blog')
 blogCollection.sort((a, b) => new Date(b.data.published_at).getTime() - new Date(a.data.published_at).getTime())
 ---
 <div>
-	<div class="flex gap-4 mx-4 max-w-4xl lg:mx-auto my-16">
+	<div class="flex flex-wrap gap-4 mx-4 max-w-4xl lg:mx-auto my-16">
 	{blogCollection.map(entry => (
-		<article class="w-1/2">
+		<article class="w-[calc(50%-1em)]">
 			<a href=`/blog/${entry.slug}`>
             <div class="aspect-[4/3]">
                 <img src=`${entry.data.img}` alt="room" class=`border-4  ${entry.data.category == 'tech' ? 'border-primaryYellow' : 'border-primaryGreen'} rounded-xl w-full h-full object-cover` />
