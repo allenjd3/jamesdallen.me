@@ -1,0 +1,23 @@
+---
+import MainLayout from '../../layouts/MainLayout.astro'
+import Nav from '../../components/Nav.astro'
+import {getCollection} from 'astro:content'
+export async function getStaticPaths() {
+	const blogCollection = await getCollection('blog')
+	return blogCollection.map(entry => ({params: {slug: entry.slug}, props: {entry}}))
+}
+
+const {entry} = Astro.props
+const {Content} = await entry.render()
+---
+<MainLayout>
+	<Nav />
+	<article class="max-w-3xl mx-4 my-16 sm:mx-auto">
+		<img src=`${entry.data.img}` alt=`${entry.data.title}` class="aspect-[4/3] rounded-3xl border-4 border-primaryGreen"/>
+		<h1 class="text-3xl font-display mt-8 mb-4 text-center">{entry.data.title}</h1>
+		<div class="prose max-w-none text-black">
+			<Content />
+		</div>
+	</article>
+</MainLayout>
+

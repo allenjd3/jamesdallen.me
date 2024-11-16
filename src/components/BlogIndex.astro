@@ -1,0 +1,16 @@
+---
+import {getCollection} from 'astro:content'
+const blogCollection = await getCollection('blog')
+---
+<div>
+	<div class="flex gap-4 mx-4 max-w-4xl lg:mx-auto my-16">
+	{blogCollection.map(entry => (
+		<article>
+			<a href=`/blog/${entry.slug}`>
+			<img src=`${entry.data.img}` alt="room" class="border-2 border-primaryGreen rounded-xl aspect-[4/3]" />
+				<h2 class="font-display md:text-xl mx-4 text-center">{entry.data.title}</h2>
+			</a>
+		</article>
+	))}
+	</div>
+</div>

@@ -1,0 +1,8 @@
+---
+const {type} = Astro.props
+---
+
+<div class="flex justify-center items-center gap-1 mt-8 md:mt-4 font-display">
+	<a href="/" class=`${type == 'home' ? 'bg-primaryYellow rounded-full' : '' } py-2 px-4`>Home</a>
+	<a href="/contact" class=`${type == 'contact' ? 'bg-primaryYellow rounded-full' : '' } py-2 px-4`>Contact</a>
+</div>

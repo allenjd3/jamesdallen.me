@@ -1,16 +1,16 @@
 ---
-
+import MainLayout from '../layouts/MainLayout.astro'
+import Nav from '../components/Nav.astro'
+import BlogIndex from '../components/BlogIndex.astro'
+const keywords = 'one, two'
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<MainLayout title="Hello" description="My description" keywords=`${keywords}` image="bla" url="jamesdallen.me">
+	<Nav type="home" />
+	<div class="relative font-sans px-4 pt-20 space-y-8 text-center max-w-xl mx-auto">
+		<p><span class="font-bold">Hi! I'm James</span>, a former Hospital Laboratory supervisor who traded microscopes and test tubes for PHP and the TALL stack. Since 2021, I’ve been diving into the world of web development with the same passion I once used to analyze lab results. Today, I work with PHP, Laravel, and the TALL stack, crafting clean, functional code.</p>
+		<p>On this site, you'll find my projects, musings, and occasional explorations of how my background in healthcare shapes my approach to development. So grab a coffee (as long as you aren’t in a clean area), and join me on this journey from lab supervisor to full-stack developer!</p>
+		<div class="absolute text-7xl text-primaryRedOrange font-display top-0 left-2 -z-10 opacity-50 transform -rotate-6">&rdquo;</div>
+	</div>
+	<BlogIndex />
+</MainLayout>

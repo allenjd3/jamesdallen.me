@@ -1,0 +1,53 @@
+---
+interface Props {
+	title: string,
+	description: string,
+	keywords: string[],
+	image: string,
+	url: string,
+}
+
+const {title, description, keywords, image, url} = Astro.props
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content=`${description}`>
+	<meta name="keywords" content=`${keywords}`>
+	<meta name="author" content="James Allen">
+
+	<!-- Open Graph Meta Tags (Facebook, LinkedIn) -->
+	<meta property="og:title" content=`${title} | James Allen`>
+	<meta property="og:description" content=`${description}`>
+	<meta property="og:image" content=`${image}`>
+	<meta property="og:url" content=`${url}`>
+	<meta property="og:type" content="website">
+	<meta property="og:site_name" content="James D Allen">
+
+	<!-- Twitter Meta Tags -->
+	<meta name="twitter:card" content=`${image}`>
+	<meta name="twitter:site" content="@jacques2186">
+	<meta name="twitter:title" content=`${title} | James Allen`>
+	<meta name="twitter:description" content=`${description}`>
+	<meta name="twitter:image" content=`${url}`>
+
+	<!-- Additional SEO Meta Tags -->
+	<meta name="robots" content="index, follow">
+	<meta name="language" content="English">
+	<meta name="revisit-after" content="7 days">
+	<meta name="googlebot" content="index, follow">
+	<link rel="preconnect" href="https://fonts.bunny.net">
+	<link href="https://fonts.bunny.net/css?family=bungee:400|josefin-sans:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet" />
+	<title>{title} | James Allen</title>
+</head>
+<body class="bg-background pb-16 pt-8">
+	<div class="relative max-w-xl h-[150px]">
+		<img src="/g1.webp" alt="logo background" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-auto" />
+		<h1 class="absolute text-4xl font-display z-10 top-1/2 -translate-y-1/2 text-center w-full">James Allen</h1>
+	</div>
+	<slot />
+</body>
+</html>
