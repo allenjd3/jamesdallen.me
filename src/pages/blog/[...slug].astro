@@ -2,6 +2,7 @@
 import MainLayout from '../../layouts/MainLayout.astro'
 import Nav from '../../components/Nav.astro'
 import {getCollection} from 'astro:content'
+
 export async function getStaticPaths() {
 	const blogCollection = await getCollection('blog')
 	return blogCollection.map(entry => ({params: {slug: entry.slug}, props: {entry}}))
