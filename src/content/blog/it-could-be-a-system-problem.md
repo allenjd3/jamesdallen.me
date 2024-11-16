@@ -1,6 +1,6 @@
 ---
 title: "It could be a system problem"
-img: "/img/hospital.webp"
+img: "https://jamesdallen.s3.us-east-1.amazonaws.com/hospital.webp"
 category: "hospital"
 published_at: "2024/11/16 12:00"
 photo_attribution: 'Photo by <a href="https://unsplash.com/@mdominguezfoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Martha Dominguez de Gouveia</a> on <a href="https://unsplash.com/photos/hospital-bed-near-couch-KF-h9HMxRKg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
