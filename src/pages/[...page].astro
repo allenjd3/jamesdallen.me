@@ -13,10 +13,13 @@ export const getStaticPaths = (async ({paginate}) => {
 const {page} = Astro.props
 console.log(page)
 
-const keywords = 'one, two'
+const title = "Musings on Tech and Healthcare"
+const description = "Hi! I'm James, a former Hospital Laboratory supervisor who traded microscopes and test tubes for PHP and the TALL stack. Since 2021, I’ve been diving into the world of web development with the same passion I once used to analyze lab results. Today, I work with PHP, Laravel, and the TALL stack, crafting clean, functional code."
+const keywords = "Technology, Livewire, Lab work, PHP"
+const image = "https://jamesdallen.s3.us-east-1.amazonaws.com/Blog.png"
 ---
 
-<MainLayout title="Hello" description="My description" keywords=`${keywords}` image="bla" url="jamesdallen.me">
+<MainLayout title={title} description={description} keywords={keywords} image={image} url="https://jamesdallen.me">
 	<div class="relative font-sans px-4 pt-20 space-y-8 text-center max-w-xl mx-auto">
 		<p><span class="font-bold">Hi! I'm James</span>, a former Hospital Laboratory supervisor who traded microscopes and test tubes for PHP and the TALL stack. Since 2021, I’ve been diving into the world of web development with the same passion I once used to analyze lab results. Today, I work with PHP, Laravel, and the TALL stack, crafting clean, functional code.</p>
 		<p>On this site, you'll find my projects, musings, and occasional explorations of how my background in healthcare shapes my approach to development. So grab a coffee (as long as you aren’t in a clean area), and join me on this journey from lab supervisor to full-stack developer!</p>
