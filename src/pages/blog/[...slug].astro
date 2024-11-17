@@ -1,7 +1,6 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro'
 import {getCollection} from 'astro:content'
-import Button from "../../components/button.astro";
 
 export async function getStaticPaths() {
 	const blogCollection = await getCollection('blog')
@@ -13,8 +12,19 @@ const {Content} = await entry.render()
 const publishedDate = new Date(entry.data.published_at)
 const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"})} ${publishedDate.getDay()}, ${publishedDate.getFullYear()}`
 ---
-<MainLayout>
+<MainLayout
+        title={entry.data.title}
+        description={entry.data.description}
+        keywords={entry.data.keywords}
+        image={entry.data.img}
+        url=`https://jamesdallen.me/blog/${entry.slug}`
+>
 	<article class="max-w-2xl mx-4 my-16 sm:mx-auto">
+        <div class="mb-8">
+            <a href='/' class=`font-display py-2 px-4 rounded-full` onclick="history.back()">
+                &lt; Back to all posts
+            </a>
+        </div>
 		<img
                 src=`${entry.data.img}`
                 alt=`${entry.data.title}`
@@ -29,7 +39,9 @@ const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"}
 			<Content />
 		</div>
         <div class="flex justify-center my-8">
-            <Button url="/">All posts</Button>
+            <a href='/' class=`font-display py-2 px-4 rounded-full bg-primaryYellow`>
+                All Posts
+            </a>
         </div>
 	</article>
 </MainLayout>
