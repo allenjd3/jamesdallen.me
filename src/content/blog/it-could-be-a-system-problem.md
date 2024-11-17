@@ -19,7 +19,7 @@ So lets say I am a patient and I come in needing a unit of blood. The lab will s
 
 You probably have heard about blood type but there are many other factors that can cause you to have a reaction to blood you've been given. Antigens like Kell or E or duffy can cause reactions that can cause the blood you are receiving to make you very sick. There is a whole science behind making sure you get the right blood and its very important to get the right blood. 
 
-As you can imagine, there are lots of ways to mess this up. You can test the wrong patients blood when doing your initial tests. You can do the testing itself wrong. You can mix up the blood you are testing. Your nurse can mix up the blood they are giving. There are so many points along the line that the wrong thing can happen and the consequences of a mistake can be deadly. 
+As you can imagine, there are lots of ways to mess this up. You can test the wrong patient's blood when doing your initial tests. You can do the testing itself wrong. You can mix up the blood you are testing. Your nurse can mix up the blood they are giving. There are so many points along the line that the wrong thing can happen and the consequences of a mistake can be deadly. 
 
 Jumping back to our incident, it doesn't really matter what exactly happened but something happened and it was severe enough that it caused an investigation. (Nobody was hurt thankfully). It's easy in a time like this to start blaming the individuals involved. Why didn't they follow this procedure? How could they mess this up? What we discovered however was that the system broke down.
 
