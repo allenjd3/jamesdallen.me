@@ -1,0 +1,11 @@
+---
+interface Props {
+    url: string,
+    classes?: string | null | undefined,
+}
+
+const {url, classes} = Astro.props
+---
+<a href={url} class=`font-display py-2 px-4 rounded-full ${classes ? classes : 'bg-primaryYellow'}`>
+    <slot />
+</a>

@@ -1,6 +1,7 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro'
 import {getCollection} from 'astro:content'
+import Button from "../../components/button.astro";
 
 export async function getStaticPaths() {
 	const blogCollection = await getCollection('blog')
@@ -9,6 +10,8 @@ export async function getStaticPaths() {
 
 const {entry} = Astro.props
 const {Content} = await entry.render()
+const publishedDate = new Date(entry.data.published_at)
+const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"})} ${publishedDate.getDay()}, ${publishedDate.getFullYear()}`
 ---
 <MainLayout>
 	<article class="max-w-2xl mx-4 my-16 sm:mx-auto">
@@ -20,9 +23,13 @@ const {Content} = await entry.render()
                 height="504"
         />
         <p class="prose" set:html={entry.data.photo_attribution}/>
-		<h1 class="text-3xl font-display my-8 text-center">{entry.data.title}</h1>
+		<h1 class="text-3xl font-display mt-8 mb-4 text-center">{entry.data.title}</h1>
+        <p class="text-center mb-4">{formattedDate}</p>
 		<div class="prose max-w-none text-black">
 			<Content />
 		</div>
+        <div class="flex justify-center my-8">
+            <Button url="/">All posts</Button>
+        </div>
 	</article>
 </MainLayout>
