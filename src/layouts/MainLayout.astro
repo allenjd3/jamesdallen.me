@@ -49,5 +49,6 @@ const {title, description, keywords, image, url} = Astro.props
 		<h1 class="absolute text-4xl font-display z-10 top-1/2 -translate-y-1/2 text-center w-full"><a href="/">James Allen</a></h1>
 	</div>
 	<slot />
+    <div class="my-8 flex justify-center items-center">&copy; James D Allen {(new Date()).getFullYear()}. All rights reserved.</div>
 </body>
 </html>
