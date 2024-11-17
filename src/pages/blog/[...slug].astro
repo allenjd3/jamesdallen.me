@@ -1,6 +1,5 @@
 ---
 import MainLayout from '../../layouts/MainLayout.astro'
-import Nav from '../../components/Nav.astro'
 import {getCollection} from 'astro:content'
 
 export async function getStaticPaths() {
@@ -12,9 +11,14 @@ const {entry} = Astro.props
 const {Content} = await entry.render()
 ---
 <MainLayout>
-	<Nav />
 	<article class="max-w-2xl mx-4 my-16 sm:mx-auto">
-		<img src=`${entry.data.img}` alt=`${entry.data.title}` class={`aspect-[4/3] rounded-3xl border-4 ${entry.data.category == 'tech' ? 'border-primaryYellow' : 'border-primaryGreen'}`} />
+		<img
+                src=`${entry.data.img}`
+                alt=`${entry.data.title}`
+                class={`aspect-[4/3] rounded-3xl border-4 ${entry.data.category == 'tech' ? 'border-primaryYellow' : 'border-primaryGreen'}`}
+                width="672"
+                height="504"
+        />
         <p class="prose" set:html={entry.data.photo_attribution}/>
 		<h1 class="text-3xl font-display my-8 text-center">{entry.data.title}</h1>
 		<div class="prose max-w-none text-black">

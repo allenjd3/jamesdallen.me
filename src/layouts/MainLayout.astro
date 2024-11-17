@@ -2,7 +2,7 @@
 interface Props {
 	title: string,
 	description: string,
-	keywords: string[],
+	keywords: string,
 	image: string,
 	url: string,
 }
@@ -46,7 +46,7 @@ const {title, description, keywords, image, url} = Astro.props
 <body class="bg-background pb-16 pt-8">
 	<div class="relative max-w-xl h-[150px]">
 		<img src="/g1.webp" alt="logo background" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-4/5 h-auto" />
-		<h1 class="absolute text-4xl font-display z-10 top-1/2 -translate-y-1/2 text-center w-full">James Allen</h1>
+		<h1 class="absolute text-4xl font-display z-10 top-1/2 -translate-y-1/2 text-center w-full"><a href="/">James Allen</a></h1>
 	</div>
 	<slot />
 </body>
