@@ -3,6 +3,7 @@ title:  "Old is New Again"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/old-stuff.webp"
 published_at:   "2021-01-12 20:02:00"
 category: "tech"
+keywords: "hotwire, html, over, wire"
 description: "You may have heard about the latest and greatest new piece of front-end tech : Hotwire. Hotwire literally stands for HTML over the wire."
 photo_attribution: 'Photo by <a href="https://unsplash.com/@irvinzheng?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Irvin Zheng</a> on <a href="https://unsplash.com/photos/black-sewing-machine-on-table-EsoI7v-tHDA?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       '

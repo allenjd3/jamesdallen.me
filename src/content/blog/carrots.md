@@ -3,6 +3,7 @@ title:  "Carrots"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/carrots.webp"
 published_at:   "2020-06-22 20:08"
 category: "tech"
+keywords: "wordpress, roots/sage"
 description: "Laravel's tagline is \"The PHP Framework for Web Artisans.\" It's aptly named, if a little pretentious. You can create really beautiful code with laravel. You can create beautiful code with Ruby on Rails, or nodejs. And then there is wordpress."
 photo_attribution: 'Photo by <a href="https://unsplash.com/@jonathanpielmayer?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Jonathan Pielmayer</a> on <a href="https://unsplash.com/photos/carrots-on-table-eFFnKMiDMGc?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
       '
