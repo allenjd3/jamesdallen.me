@@ -35,7 +35,7 @@ const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"}
         <p class="prose" set:html={entry.data.photo_attribution}/>
 		<h1 class="text-3xl font-display mt-8 mb-4 text-center">{entry.data.title}</h1>
         <p class="text-center mb-4">{formattedDate}</p>
-		<div class="prose max-w-none text-black">
+		<div class="prose max-w-none text-black w-full">
 			<Content />
 		</div>
         <div class="flex justify-center my-8">

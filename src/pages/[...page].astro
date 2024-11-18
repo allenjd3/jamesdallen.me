@@ -37,8 +37,8 @@ const image = "https://jamesdallen.s3.us-east-1.amazonaws.com/Blog.png"
                     </a>
                 </article>
             ))}
-            <div class="flex justify-end w-full">
-                {page.url.next ? <a href={`/page${page.url.next}`}>Next</a> : ''}
+            <div class="flex justify-end w-full font-display">
+                {page.url.next ? <a href={`/page${page.url.next}`} class="py-2 px-4 rounded-full bg-primaryYellow">Next</a> : ''}
             </div>
         </div>
     </div>
