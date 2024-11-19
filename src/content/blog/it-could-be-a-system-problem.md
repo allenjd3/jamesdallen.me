@@ -1,6 +1,7 @@
 ---
 title: "It could be a system problem"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/hospital.webp"
+alt: "A hospital room"
 category: "hospital"
 published_at: "2024/11/16 12:00"
 keywords: "mistakes, hospital, management"

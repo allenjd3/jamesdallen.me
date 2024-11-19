@@ -1,6 +1,7 @@
 ---
-title:  "Using Clerk.com with a laravel backend part 2"
+title:  "Clerk + Laravel part 2"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/laravel-clerk-2.webp"
+alt: "Laravel and Clerk logos part 2"
 published_at:   "2024-08-03 19:00:00"
 category: "tech"
 keywords: "shadcn, laravel, form, validation, client"

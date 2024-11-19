@@ -28,7 +28,7 @@ const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"}
         <div class="aspect-[4/3] w-full h-auto">
             <img
                     src=`${entry.data.img}`
-                    alt=`${entry.data.title}`
+                    alt=`${entry.data.alt}`
                     class={`rounded-3xl border-4 w-full h-full object-cover object-center ${entry.data.category == 'tech' ? 'border-primaryYellow' : 'border-primaryGreen'}`}
                     width="672"
                     height="504"
