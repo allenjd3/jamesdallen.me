@@ -25,13 +25,15 @@ const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"}
                 &lt; Back to all posts
             </a>
         </div>
-		<img
-                src=`${entry.data.img}`
-                alt=`${entry.data.title}`
-                class={`aspect-[4/3] rounded-3xl border-4 ${entry.data.category == 'tech' ? 'border-primaryYellow' : 'border-primaryGreen'}`}
-                width="672"
-                height="504"
-        />
+        <div class="aspect-[4/3] w-full h-auto">
+            <img
+                    src=`${entry.data.img}`
+                    alt=`${entry.data.alt}`
+                    class={`rounded-3xl border-4 w-full h-full object-cover object-center ${entry.data.category == 'tech' ? 'border-primaryYellow' : 'border-primaryGreen'}`}
+                    width="672"
+                    height="504"
+            />
+        </div>
         <p class="prose" set:html={entry.data.photo_attribution}/>
 		<h1 class="text-3xl font-display mt-8 mb-4 text-center">{entry.data.title}</h1>
         <p class="text-center mb-4">{formattedDate}</p>

@@ -1,6 +1,7 @@
 ---
 title:  "Carrots"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/carrots.webp"
+alt: "carrots"
 published_at:   "2020-06-22 20:08"
 category: "tech"
 keywords: "wordpress, roots/sage"

@@ -1,6 +1,7 @@
 ---
 title:  "Rails with Laravel Breeze Next"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/rails.webp"
+alt: "Train tracks"
 published_at:   "2023-09-25 15:00:00"
 category: "tech"
 keywords: "ruby on rails, laravel, breeze"

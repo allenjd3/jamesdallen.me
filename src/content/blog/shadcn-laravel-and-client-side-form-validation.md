@@ -1,6 +1,7 @@
 ---
 title:  "Shadcn/ui Laravel and Client Side Form Validation"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/form.webp"
+alt: "A person filling out paperwork"
 published_at:   "2024-06-22 15:00:00"
 category: "tech"
 keywords: "shadcn, laravel, form, validation, client"

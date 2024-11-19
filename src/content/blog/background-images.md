@@ -1,6 +1,7 @@
 ---
 title:  "Background Images"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/background-1.webp"
+alt: "blurry background possibly twinkling lights"
 published_at:   "2024-07-06 15:00:00"
 category: "tech"
 keywords: "hero, Image, nextjs"

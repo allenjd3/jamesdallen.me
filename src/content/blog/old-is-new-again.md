@@ -1,6 +1,7 @@
 ---
 title:  "Old is New Again"
 img: "https://jamesdallen.s3.us-east-1.amazonaws.com/old-stuff.webp"
+alt: "Old sewing machine"
 published_at:   "2021-01-12 20:02:00"
 category: "tech"
 keywords: "hotwire, html, over, wire"
