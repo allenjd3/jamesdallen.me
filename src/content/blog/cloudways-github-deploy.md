@@ -5,7 +5,7 @@ alt: "a single cloud in a blue sky"
 published_at:   "2025-01-25 07:00:00"
 category: "tech"
 keywords: "Cloudways, Github, Deployment, Actions"
-description: "For some reason, I feel like I always have to rediscover the best way to place that background image and overlay so I decided I'm just going to write it down."
+description: "I recently had to deploy a laravel project to Cloudways. Cloudways is a good option for projects that might be transfered over to people with less experience working with servers. They handle the infrustructure so you don't have to."
 photo_attribution: 'Photo by <a href="https://unsplash.com/@enginakyurt?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">engin akyurt</a> on <a href="https://unsplash.com/photos/white-clouds-and-blue-sky-during-daytime-A9_IsUtjHm4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>'
 ---
 I recently had to deploy a laravel project to Cloudways. [Cloudways](https://cloudways.com/en/) is a good option for projects that might be transfered over to people with less experience working with servers. They handle the infrustructure so you don't have to. One big downside for laravel projects though is that they don't have a native way to run things after deploy like `php artisan migrate` for instance.
