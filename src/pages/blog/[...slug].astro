@@ -10,7 +10,7 @@ export async function getStaticPaths() {
 const {entry} = Astro.props
 const {Content} = await entry.render()
 const publishedDate = new Date(entry.data.published_at)
-const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"})} ${publishedDate.getDay()}, ${publishedDate.getFullYear()}`
+const formattedDate = `${publishedDate.toLocaleString("default", {month: "long"})} ${publishedDate.getDate()}, ${publishedDate.getFullYear()}`
 ---
 <MainLayout
         title={entry.data.title}
